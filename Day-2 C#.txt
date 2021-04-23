@@ -1,0 +1,346 @@
+using System;
+class HelloWorld
+{
+  static void Main ()
+  {
+    Console.WriteLine("Enter some value");
+    var x=Console.ReadLine();
+    Console.WriteLine(x);
+     Console.WriteLine(x.GetType());
+  }
+}
+
+using System;
+
+namespace Sample_2
+{
+    class Program
+    {
+        void even(int a)
+        {
+            if (a % 2 == 0)
+                Console.WriteLine("The entered number is even");
+            else
+                Console.WriteLine("The entered number is odd");
+        }
+        static void Main(string[] arge)
+        {
+            int b;
+            Console.WriteLine("Enter a number");
+            b = Convert.ToInt32(Console.ReadLine());
+            Program program = new Program();
+            program.even(b);
+            Console.ReadLine();
+        }
+    }
+}
+
+using System;
+
+namespace Sample_2
+{
+    class Program
+    {
+        void swap(int a,int b)
+        {
+            int temp = a;
+            a=b;
+            b=temp;
+            Console.WriteLine("------inside swap function------");
+            Console.WriteLine("a= "+a);
+            Console.WriteLine("b= "+b);
+        }
+        static void Main()
+        {
+            Program program1= new Program();
+            int a=5, b=6;
+            program1.swap(a,b);
+            Console.WriteLine("------OUTSIDE swap function------");
+            Console.WriteLine("a= "+a);
+            Console.WriteLine("b= "+b);
+            Console.ReadLine();
+        }
+
+
+
+using System;
+
+class Class2
+{
+    class Program
+    {
+        void swap(ref int a, refint b)
+        {
+            int temp = a;
+            a=b;
+            b=temp;
+            Console.WriteLine("------inside swap function------");
+            Console.WriteLine("a= "+a);
+            Console.WriteLine("b= "+b);
+        }
+        static void Main()
+        {
+            Class2 class1= new Class2();
+            int a=5, b=6;
+            class1.Swap(ref a,ref b);
+            Console.WriteLine("------OUTSIDE swap function------");
+            Console.WriteLine("a= "+a);
+            Console.WriteLine("b= "+b);
+            Console.ReadLine();
+
+        }
+    }
+}
+    }
+}
+
+
+using System.IO;
+using System;
+
+class Program
+{
+    static void Main()
+    {
+      Console.WriteLine("enter anything")
+var a = Console.ReadLine();
+int result;
+int.TryParse(a, out result);
+if (result = =0)
+Console.WriteLine("Not a number");
+else
+Console.WriteLine("it is a number");
+
+    }
+}
+
+
+using System.IO;
+using System;
+
+class Class3
+
+{
+
+    void Swap(out int a)
+    {
+    
+    Console.WriteLine(" Inside swap fun");
+    a = 6;
+    
+    }
+   
+    static void Main()
+    {
+Class3 Class1 = new Class3(); 
+int a=5;
+Class1.Swap(out a);
+ Console.WriteLine("Inside Main fun");
+ Console.WriteLine("a= "+a);
+ 
+ Console.ReadLine();
+    }   
+}
+
+
+using System.IO;
+using System;
+
+class Employee
+{
+    public int EmployeeID {get; set; }
+    public string Name {get; set;}
+}
+class Class1
+{
+    static void Main()
+    {
+        Employee emp= new Employee();
+        emp.EmployeeID = 101;
+        emp.Name= "Dummy1";
+        Employee emp2 = new Employee();
+        emp.EmployeeID = 102;
+        emp.Name= "Dummy2";
+        string a = "Guna";
+        string b = "Guna";
+        Console.WriteLine(a.Equals(b));
+        Console.WriteLine(Equals(a,b));
+        Console.ReadLine();
+    }
+}
+
+using System.IO;
+using System;
+
+class Program
+{
+    static void Main()
+    {
+      Console.WriteLine("enter anything")
+var a = Console.ReadLine();
+int result;
+int.TryParse(a, out result);
+if (result = =0)
+Console.WriteLine("Not a number");
+else
+Console.WriteLine("it is a number");
+
+    }
+}
+
+using System.IO;
+using System;
+{
+    public struct Person
+    {
+        public String Name {get; set;}
+        public Person(string_name)
+        {
+            Name =-name;
+        }
+    }
+
+using System.IO;
+using System;
+namespace Day_2
+{
+        public struct Person
+        {
+            public String Name{get; set;}
+            public Person(string _name)
+            {
+                Name=_name;
+            }
+        }
+                public struct Dog
+                {
+                   public String Breed{get; set;}
+            public Dog(string _breed) 
+            {
+                Breed=_breed;
+            }
+                }
+        class Program
+{
+         public static void showvalue(Object o)
+    {
+       if(o is Person p) 
+       {
+           Console.WriteLine(p.Name);
+       }
+       else if(o is Dog d)
+       {
+           Console.WriteLine(d.Breed);
+       }
+     }
+    static void Main()
+    {
+        Object o = new Person("guna");
+        showvalue(o);
+        o = new Dog("Husky");
+        showvalue(o);
+        Console.ReadLine();
+    }
+}
+
+
+using System;
+class HelloWorld
+{
+  static void Main()
+  {
+    object str = "hello";
+   char[] values = {'h','e','l','l','o'};
+   object str2 = new string (values);
+   Console.WriteLine("Using Equality operatr" +(str== str2));
+   Console.WriteLine("Using equals() method{0}", str.Equals(str2));
+  }
+
+using System;
+class HelloWorld {
+  static void Main() {
+    Console.WriteLine("Enter string;");
+    string sample = Console.ReadLine();
+    char[] sample2=new char[sample.Length];
+    for (int is sample.Length-1; i>=0;i--)
+    {
+        revredsampleArray[i] = new string(revredsampleArray);
+        if(reversedstring== inputstring)
+        {
+            Console.WriteLine("it's a palindrome");
+        }
+        else
+        {
+            Console.WriteLine("Please re-enter the string");
+        }
+    }
+  }
+}
+
+}
+
+using System;
+{
+    class CountNumberOfVowels
+    {
+        static void Main()
+        {
+            int vowelsCount = 0;
+            Console.WriteLine("Please enter string to count vowels:");
+            string strValue = Console.ReadLine();
+            for (int i = 0; i < strValue.Length; i++)
+            {
+                if (strValue[i] == 'a' || strValue[i] == 'e' || strValue[i] == 'i'  || strValue[i] == 'o'|| strValue[i] == 'u')
+                    vowelsCount++;
+                }
+            }
+            Console.WriteLine("No of vowels in [{0}] are {1}" , strValue, vowelsCount);
+            Console.ReadLine();
+        }
+    }
+}
+
+
+*******************************************************************************
+using System;
+{
+    class CountNumberOfVowels
+    {
+        static void Main()
+        {
+            Console.WriteLine("enter string to count:");
+            int[]charCount = new int[256];
+            int Length=inputString.Length;
+            string strValue = Console.ReadLine();
+            for (int i = 0; i < strValue.Length; i++)
+            {
+                charCount[inputString[index]]++;
+                }
+                int maxcount = -1;
+                char charcter =;
+                for (int i = 0; i < length; i++)
+                {
+                    maxcount=charCount[inputString[i]];
+                    charcter = inputString[i];
+                }
+            }
+            Console.WriteLine("The string is {0}",inputString);
+            Console.WriteLine("The Highest frequency of character",);
+        }
+    }
+}
+
+
+using System;
+class HelloWorld 
+{
+  public static void addstring(string s1, strings2)
+  {
+      Console.WriteLine(s1+s2);
+  }
+  static void Main() 
+  {
+    addstring(s1:"guna",s2:"shankar");
+    Console.ReadLine();
+  }
+}
